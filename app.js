@@ -28,7 +28,7 @@ let week3Perc = (week3/area)*100;
     if(week2Perc>80){
         console.log("The plants to be proned")
     }
-    if(week2Perc>=50&&week1<=80){
+    if(week2Perc>=50&&week2<=80){
         console.log("The plants to be monitored")
     }
     if(week2Perc<50){
@@ -39,14 +39,14 @@ let week3Perc = (week3/area)*100;
         if(week3Perc>80){
             console.log("The plants to be proned")
         }
-        if(week3Perc>=50&&week1<=80){
+        if(week3Perc>=50&&week3Perc<=80){
             console.log("The plants to be monitored")
         }
         if(week3Perc<50){
             console.log("The plants to be planted")
         } 
 
-
+console.log(week1Perc, week2Perc, week3Perc)
 
 
 
