@@ -25,9 +25,19 @@ console.log(getPlantsGrowth(1, week1Perc));
 console.log(getPlantsGrowth(3, week2Perc));
 console.log(getPlantsGrowth(3, week3Perc));
 
+//PART TWO: THINK BIGGER
+let newStartingPlants = 100; 
+let week =1;
+let additionalSpace = 0;
+let currentPlants = initialPlants;
 
-// plantsNumb = 100;
-// let week10 = week1*1024;
-// let week10Perc = (week10/area)*100;
+while (week <=10){
+    currentPlants*=2;
+    additionalSpace = (currentPlants*minSpace)-area;
+    week++;
+}
 
-// console.log(week10Perc)
+console.log(`The additonal space required after 10 weeks is ${additionalSpace}`)
+
+let expandedRadious = (additionalSpace +area)/PI;
+console.log(`The expanded radious is ${expandedRadious.toFixed(2)}`)
