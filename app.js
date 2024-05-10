@@ -12,41 +12,22 @@ let week1Perc = (week1/area)*100;
 let week2Perc = (week2/area)*100;
 let week3Perc = (week3/area)*100;
 
+function getPlantsGrowth(weekNumb, weekPerc){
+    if(weekPerc > 80)
+        return `Plants in week #${weekNumb} need to be pruned`;
+    else if(weekPerc>=50 && weekPerc <=80)
+        return `Plants in week #${weekNumb} need to be monitored`;
+    else
+        return `Plants in week #${weekNumb} need to be planted`;
+}
 
-//WEEK1
-        if(week1Perc>80){
-            console.log("The plants to be proned")
-        }
-        if(week1Perc>=50&&week1<=80){
-            console.log("The plants to be monitored")
-        }
-        if(week1Perc<50){
-            console.log("The plants to be planted")
-        }  
-
-//WEEK2
-    if(week2Perc>80){
-        console.log("The plants to be proned")
-    }
-    if(week2Perc>=50&&week2<=80){
-        console.log("The plants to be monitored")
-    }
-    if(week2Perc<50){
-        console.log("The plants to be planted")
-    }  
-
-//WEEK3
-        if(week3Perc>80){
-            console.log("The plants to be proned")
-        }
-        if(week3Perc>=50&&week3Perc<=80){
-            console.log("The plants to be monitored")
-        }
-        if(week3Perc<50){
-            console.log("The plants to be planted")
-        } 
-
-console.log(week1Perc, week2Perc, week3Perc)
+console.log(getPlantsGrowth(1, week1Perc));
+console.log(getPlantsGrowth(3, week2Perc));
+console.log(getPlantsGrowth(3, week3Perc));
 
 
+// plantsNumb = 100;
+// let week10 = week1*1024;
+// let week10Perc = (week10/area)*100;
 
+// console.log(week10Perc)
