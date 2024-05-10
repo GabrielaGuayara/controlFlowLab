@@ -41,3 +41,13 @@ console.log(`The additonal space required after 10 weeks is ${additionalSpace}`)
 
 let expandedRadious = (additionalSpace +area)/PI;
 console.log(`The expanded radious is ${expandedRadious.toFixed(2)}`)
+
+//PART THREE: Error is Judgement
+try{
+    let initialSpace = plantsNumb * minSpace;
+    if(initialSpace>area){
+        throw new Error ("ERROR:There is no enough space for the number of plans");
+    }
+}catch(error){
+        console.log(error.message)
+    }
